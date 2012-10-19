@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Rotation Switch</string>
+    <string name="add_noti">Show Switch</string>
+    <string name="remove_noti">Dismiss Switch</string>
+</resources>

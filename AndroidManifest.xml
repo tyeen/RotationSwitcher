@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.android.tyeen.rotationswitch"
+      android:versionCode="1"
+      android:versionName="1.0">
+    <uses-sdk android:minSdkVersion="14" />
+
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+    <application android:label="@string/app_name" android:icon="@drawable/ic_applauncher">
+        <activity android:name="RotationSwitchActivity"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name="RotationSwitchReceiver">
+            <intent-filter>
+                <action android:name="android.tyeen.action.ACTION_ROTATION_CHANGED" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="RotationSwitchService" android:process=":rotation_switch_service" />
+    </application>
+</manifest>

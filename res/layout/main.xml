@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1">
+        <Button
+            android:id="@+id/btn_start_notification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            style="?android:attr/buttonBarButtonStyle"
+            android:padding="2dp"
+            android:textSize="40dp"
+            android:text="@string/add_noti"/>
+        <!-- left decorator of the bubbon -->
+        <View
+            android:layout_width="6dp"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/btn_start_notification"
+            android:layout_alignTop="@id/btn_start_notification"
+            android:layout_alignBottom="@id/btn_start_notification"
+            android:background="@drawable/ic_button_left_right_decor"/>
+        <!-- left decorator of the bubbon -->
+        <View
+            android:layout_width="6dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/btn_start_notification"
+            android:layout_alignTop="@id/btn_start_notification"
+            android:layout_alignBottom="@id/btn_start_notification"
+            android:background="@drawable/ic_button_left_right_decor"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1">
+        <Button
+            android:id="@+id/btn_finish_notification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            style="?android:attr/buttonBarButtonStyle"
+            android:padding="2dp"
+            android:textSize="40dp"
+            android:text="@string/remove_noti"/>
+        <!-- left decorator of the bubbon -->
+        <View
+            android:layout_width="6dp"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/btn_finish_notification"
+            android:layout_alignTop="@id/btn_finish_notification"
+            android:layout_alignBottom="@id/btn_finish_notification"
+            android:background="@drawable/ic_button_left_right_decor"/>
+        <!-- right decorator of the bubbon -->
+        <View
+            android:layout_width="6dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/btn_finish_notification"
+            android:layout_alignTop="@id/btn_finish_notification"
+            android:layout_alignBottom="@id/btn_finish_notification"
+            android:background="@drawable/ic_button_left_right_decor"/>
+    </RelativeLayout>
+</LinearLayout>
+

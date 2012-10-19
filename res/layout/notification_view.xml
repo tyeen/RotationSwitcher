@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <ImageView
+        android:id="@+id/rotator_icon"
+        android:layout_width="@android:dimen/notification_large_icon_width"
+        android:layout_height="@android:dimen/notification_large_icon_height"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:scaleType="center"
+        android:background="@drawable/notify_panel_icon_bg_tile"
+        />
+    <TextView
+        android:id="@+id/txt_title"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/rotator_icon"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:textAppearance="@style/android:TextAppearance.StatusBar.EventContent.Title"
+        />
+    <ImageButton
+        android:id="@+id/rotation_check"
+        android:gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:paddingRight="15dp"
+        android:background="#00000000"
+        />
+</RelativeLayout>
+
